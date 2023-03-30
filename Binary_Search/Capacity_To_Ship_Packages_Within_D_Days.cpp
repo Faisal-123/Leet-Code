@@ -6,8 +6,12 @@
             if(cur+i>m)
             {
                 cnt++;
+                cur=0;
             }
+            cur+=i;
         }
+        cnt++;
+        return cnt;
     }
     int shipWithinDays(vector<int>& w, int d) {
         int s=0,e=0;
